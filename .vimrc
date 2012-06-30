@@ -35,8 +35,6 @@ set listchars=tab:--,trail:-,extends:#,nbsp:.
 " invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
-highlight link cMember Special
-highlight cMember gui=italic
 
 " single character insert
 "nmap <Space> i_<Esc>r
