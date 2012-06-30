@@ -12,6 +12,12 @@ if has('gui_running')
 	set guioptions-=T
 endif
 
+if has('win32')
+	set guifont=DejaVu\ Sans\ Mono:h10:cDEFAULT
+elseif has('unix')
+	set guifont=DejaVu\ Sans\ Mono\ 10
+endif
+
 set ffs=unix,dos
 
 " ,,,
@@ -29,6 +35,8 @@ set listchars=tab:--,trail:-,extends:#,nbsp:.
 " invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
+highlight link cMember Special
+highlight cMember gui=italic
 
 " single character insert
 "nmap <Space> i_<Esc>r
@@ -56,11 +64,12 @@ imap <C-n> <Esc>:tabedit<CR>
 
 " ..
 set autowrite
-command! W w
+commag:molokai_originalnd! W w
 command! Q q
 
 syntax on
 colorscheme molokai
+g:molokai_original=1
 set nocp
 set bs=2
 set number
