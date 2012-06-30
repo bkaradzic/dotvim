@@ -12,6 +12,12 @@ if has('gui_running')
 	set guioptions-=T
 endif
 
+if has('win32')
+	set guifont=DejaVu\ Sans\ Mono:h10:cDEFAULT
+elseif has('unix')
+	set guifont=DejaVu\ Sans\ Mono\ 10
+endif
+
 set ffs=unix,dos
 
 " ,,,
