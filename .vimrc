@@ -49,14 +49,16 @@ nnoremap <C-tab> :FufBuffer<CR>
 " a.vim - alternate file
 nnoremap <A-o> :A<CR>
 
+" Toggle between relative and absolute line numbers.
+nnoremap <F3> :NumbersToggle<CR>
+
 " ..
 set autowrite
-commag:molokai_originalnd! W w
+command! W w
 command! Q q
 
 syntax on
 colorscheme molokai
-g:molokai_original=1
 set nocp
 set bs=2
 set number
