@@ -4,3 +4,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/hallison/vim-markdown.git
+[submodule "bundle/vim-numbers"]
+	path = bundle/vim-numbers
+	url = git://github.com/bengl/numbers.vim.git
