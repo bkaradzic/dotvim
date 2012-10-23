@@ -40,6 +40,11 @@ call l9#defineVariableDefault('g:fuf_dataDir', '~/.vim-fuf-data')
 nnoremap <A-O> :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h', '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go']]) \| FufCoverageFile<CR>
 nnoremap <A-P> :FufBuffer<CR>
 
+" easytags.vim
+let g:easytags_cmd = 'ctags'
+let g:easytags_include_members = 1
+let g:easytags_file = '~/.vimtags'
+
 " a.vim - alternate file
 nnoremap <A-o> :A<CR>
 
@@ -93,7 +98,8 @@ set smarttab      " insert tabs on the start of a line according to
                   "    shiftwidth, not tabstop
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
-set visualbell    " don't beep
+"set visualbell    " don't beep
 set noerrorbells  " don't beep
+set t_vb=         " don't flash
 
 set diffexpr=
