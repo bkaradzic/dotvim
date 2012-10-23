@@ -1,9 +1,9 @@
 [submodule "bundle/vim-lua-ftplugin"]
 	path = bundle/vim-lua-ftplugin
 	url = git://github.com/xolox/vim-lua-ftplugin
-[submodule "bundle/vim-molokai"]
-	path = bundle/vim-molokai
-	url = git://github.com/cschlueter/vim-molokai.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/hallison/vim-markdown.git
+[submodule "bundle/vim-numbers"]
+	path = bundle/vim-numbers
+	url = git://github.com/bengl/numbers.vim.git

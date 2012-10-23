@@ -12,6 +12,12 @@ if has('gui_running')
 	set guioptions-=T
 endif
 
+if has('win32')
+	set guifont=DejaVu\ Sans\ Mono:h10:cDEFAULT
+elseif has('unix')
+	set guifont=DejaVu\ Sans\ Mono\ 10
+endif
+
 set ffs=unix,dos
 
 " ,,,
@@ -38,7 +44,7 @@ nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 " fuzzyfinder.vim - http://www.vim.org/scripts/script.php?script_id=1984
 call l9#defineVariableDefault('g:fuf_dataDir', '~/.vim-fuf-data')
 nnoremap <A-O> :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h', '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go']]) \| FufCoverageFile<CR>
-nnoremap <A-P> :FufBuffer<CR>
+nnoremap <C-tab> :FufBuffer<CR>
 
 " easytags.vim
 let g:easytags_cmd = 'ctags'
@@ -48,16 +54,8 @@ let g:easytags_file = '~/.vimtags'
 " a.vim - alternate file
 nnoremap <A-o> :A<CR>
 
-" tabs
-map <C-S-tab> <Esc>:tabprevious<CR>
-nmap <C-S-tab> :tabprevious<CR>
-imap <C-S-tab> <Esc>:tabprevious<CR>
-map <C-tab> <Esc>:tabnext<CR>
-nmap <C-tab> :tabnext<CR>
-imap <C-tab> <Esc>:tabnext<CR>
-map <C-n> <Esc>:tabedit<CR>
-nmap <C-n> :tabedit<CR>
-imap <C-n> <Esc>:tabedit<CR>
+" Toggle between relative and absolute line numbers.
+nnoremap <F3> :NumbersToggle<CR>
 
 " ..
 set autowrite
