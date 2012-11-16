@@ -32,6 +32,9 @@ nmap <leader>l :set list!<CR>
 set list
 set listchars=tab:--,trail:-,extends:#,nbsp:.
 
+" highlight everything after 80-chars
+au FileType markdown match ErrorMsg '\%>80v.\+' 
+
 " invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
@@ -44,7 +47,7 @@ nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 " fuzzyfinder.vim - http://www.vim.org/scripts/script.php?script_id=1984
 call l9#defineVariableDefault('g:fuf_dataDir', '~/.vim-fuf-data')
 nnoremap <A-O> :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h', '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go']]) \| FufCoverageFile<CR>
-nnoremap <C-tab> :FufBuffer<CR>
+nnoremap <A-P> :FufBuffer<CR>
 
 " easytags.vim
 let g:easytags_cmd = 'ctags'
@@ -57,6 +60,16 @@ nnoremap <A-o> :A<CR>
 " Toggle between relative and absolute line numbers.
 nnoremap <F3> :NumbersToggle<CR>
 
+" tabs
+map <C-S-tab> <Esc>:tabprevious<CR>
+nmap <C-S-tab> :tabprevious<CR>
+imap <C-S-tab> <Esc>:tabprevious<CR>
+map <C-tab> <Esc>:tabnext<CR>
+nmap <C-tab> :tabnext<CR>
+imap <C-tab> <Esc>:tabnext<CR>
+map <C-n> <Esc>:tabedit<CR>
+nmap <C-n> :tabedit<CR>
+imap <C-n> <Esc>:tabedit<CR>
 " ..
 set autowrite
 command! W w
