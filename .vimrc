@@ -54,6 +54,9 @@ let g:easytags_cmd = 'ctags'
 let g:easytags_include_members = 1
 let g:easytags_file = '~/.vimtags'
 
+" easymotion
+let g:EasyMotion_leader_key = '<leader>'
+
 " a.vim - alternate file
 nnoremap <A-o> :A<CR>
 

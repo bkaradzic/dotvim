@@ -7,3 +7,6 @@
 [submodule "bundle/vim-numbers"]
 	path = bundle/vim-numbers
 	url = git://github.com/bengl/numbers.vim.git
+[submodule "bundle\\vim-easymotion"]
+	path = bundle\\vim-easymotion
+	url = ./bundle\\vim-easymotion
