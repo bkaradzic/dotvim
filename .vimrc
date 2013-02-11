@@ -46,7 +46,7 @@ nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 
 " fuzzyfinder.vim - http://www.vim.org/scripts/script.php?script_id=1984
 call l9#defineVariableDefault('g:fuf_dataDir', '~/.vim-fuf-data')
-nnoremap <A-O> :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h', '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go']]) \| FufCoverageFile<CR>
+nnoremap <A-O> :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h*', '**/*.inl',  '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go', '**/*.sc', '**/*.sh', '**/*.*lsl']]) \| FufCoverageFile<CR>
 nnoremap <A-P> :FufBuffer<CR>
 
 " easytags.vim
@@ -56,6 +56,14 @@ let g:easytags_file = '~/.vimtags'
 
 " easymotion
 let g:EasyMotion_leader_key = '<leader>'
+
+" MiniBufExpl Colors
+hi MBEVisibleActive guifg=#A6DB29 guibg=fg
+hi MBEVisibleChangedActive guifg=#F1266F guibg=fg
+hi MBEVisibleChanged guifg=#F1266F guibg=fg
+hi MBEVisibleNormal guifg=#5DC2D6 guibg=fg
+hi MBEChanged guifg=#CD5907 guibg=fg
+hi MBENormal guifg=#808080 guibg=fg
 
 " a.vim - alternate file
 nnoremap <A-o> :A<CR>

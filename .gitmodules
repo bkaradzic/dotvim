@@ -10,3 +10,6 @@
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/vim-minibufexpl"]
+	path = bundle/vim-minibufexpl
+	url = git://github.com/fholgado/minibufexpl.vim.git
