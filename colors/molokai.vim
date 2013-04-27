@@ -56,8 +56,8 @@ hi IncSearch       guifg=#C4BE89 guibg=#000000
 
 hi Keyword         guifg=#F92672               gui=bold
 hi Label           guifg=#E6DB74               gui=none
-hi Macro           guifg=#C4BE89               
-hi SpecialKey      guifg=#66D9EF               
+hi Macro           guifg=#C4BE89
+hi SpecialKey      guifg=#66D9EF
 
 hi MatchParen      guifg=#000000 guibg=#FD971F gui=bold
 hi ModeMsg         guifg=#E6DB74
@@ -90,9 +90,9 @@ endif
 hi Statement       guifg=#F92672               gui=bold
 hi StatusLine      guifg=#455354 guibg=fg
 hi StatusLineNC    guifg=#808080 guibg=#080808
-hi StorageClass    guifg=#FD971F               
+hi StorageClass    guifg=#FD971F
 hi Structure       guifg=#66D9EF
-hi Tag             guifg=#F92672               
+hi Tag             guifg=#F92672
 hi Title           guifg=#ef5939
 hi Todo            guifg=#FFFFFF guibg=bg      gui=bold
 
@@ -115,7 +115,8 @@ if s:molokai_original == 1
    hi NonText         guifg=#BCBCBC guibg=#3B3A32
 else
    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
-   hi Comment         guifg=#465457
+   hi Comment         guifg=#75715E
+"   hi Comment         guifg=#465457
    hi CursorLine                    guibg=#293739
    hi CursorColumn                  guibg=#293739
    hi LineNr          guifg=#BCBCBC guibg=#232526
