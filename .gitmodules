@@ -4,12 +4,12 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/hallison/vim-markdown.git
-[submodule "bundle/vim-numbers"]
-	path = bundle/vim-numbers
-	url = git://github.com/bengl/numbers.vim.git
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
 [submodule "bundle/vim-minibufexpl"]
 	path = bundle/vim-minibufexpl
 	url = git://github.com/fholgado/minibufexpl.vim.git
+[submodule "vim-numbers"]
+	path = vim-numbers
+	url = https://github.com/myusuf3/numbers.vim

@@ -14,6 +14,8 @@ endif
 
 if has('win32')
 	set guifont=DejaVu\ Sans\ Mono:h10:cDEFAULT
+elseif has('mac')
+	set clipboard+=unnamed
 elseif has('unix')
 	set guifont=DejaVu\ Sans\ Mono\ 10
 endif
