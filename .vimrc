@@ -12,14 +12,6 @@ if has('gui_running')
 	set guioptions-=T
 endif
 
-if has('win32')
-	set guifont=DejaVu\ Sans\ Mono:h10:cDEFAULT
-elseif has('mac')
-	set clipboard+=unnamed
-elseif has('unix')
-	set guifont=DejaVu\ Sans\ Mono\ 10
-endif
-
 set ffs=unix,dos
 
 " ,,,
@@ -131,3 +123,14 @@ set noerrorbells  " don't beep
 set t_vb=         " don't flash
 
 set diffexpr=
+
+if has('win32')
+	set guifont=DejaVu\ Sans\ Mono:h10:cDEFAULT
+elseif has('mac')
+"	set clipboard+=unnamed
+	nnoremap ø :A<CR>
+	nnoremap Ø :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h*', '**/*.inl',  '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go', '**/*.sc', '**/*.sh', '**/*.*lsl']]) \| FufCoverageFile<CR>
+	nnoremap ∏ :FufBuffer<CR>
+elseif has('unix')
+	set guifont=DejaVu\ Sans\ Mono\ 10
+endif
