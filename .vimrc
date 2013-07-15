@@ -127,10 +127,12 @@ set diffexpr=
 if has('win32')
 	set guifont=DejaVu\ Sans\ Mono:h10:cDEFAULT
 elseif has('mac')
-"	set clipboard+=unnamed
+	set clipboard+=unnamed
 	nnoremap ø :A<CR>
 	nnoremap Ø :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h*', '**/*.inl',  '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go', '**/*.sc', '**/*.sh', '**/*.*lsl']]) \| FufCoverageFile<CR>
 	nnoremap ∏ :FufBuffer<CR>
+	nnoremap <C-tab> :bn<CR>
+	nnoremap <C-S-tab> :bt<CR>
 elseif has('unix')
 	set guifont=DejaVu\ Sans\ Mono\ 10
 endif
