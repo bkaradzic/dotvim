@@ -38,6 +38,10 @@ highlight SpecialKey guifg=#4a4a59
 nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
 nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 
+" airline
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+
 " fuzzyfinder.vim - http://www.vim.org/scripts/script.php?script_id=1984
 call l9#defineVariableDefault('g:fuf_dataDir', '~/.vim-fuf-data')
 nnoremap <A-O> :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h*', '**/*.inl',  '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go', '**/*.sc', '**/*.sh', '**/*.*lsl']]) \| FufCoverageFile<CR>

@@ -16,3 +16,6 @@
 [submodule "bundle/vim-ag"]
 	path = bundle/vim-ag
 	url = http://github.com/rking/ag.vim
+[submodule "bundle\\vim-airline"]
+	path = bundle\\vim-airline
+	url = https://github.com/bling/vim-airline
