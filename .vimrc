@@ -74,12 +74,12 @@ nnoremap <A-o> :A<CR>
 nnoremap <F3> :NumbersToggle<CR>
 
 " tabs
-map <C-S-tab> <Esc>:tabprevious<CR>
-nmap <C-S-tab> :tabprevious<CR>
-imap <C-S-tab> <Esc>:tabprevious<CR>
-map <C-tab> <Esc>:tabnext<CR>
-nmap <C-tab> :tabnext<CR>
-imap <C-tab> <Esc>:tabnext<CR>
+map <C-S-tab> <Esc>:bp<CR>
+nmap <C-S-tab> :bp<CR>
+imap <C-S-tab> <Esc>:bp<CR>
+map <C-tab> <Esc>:bn<CR>
+nmap <C-tab> :bn<CR>
+imap <C-tab> <Esc>:bn<CR>
 map <C-n> <Esc>:tabedit<CR>
 nmap <C-n> :tabedit<CR>
 imap <C-n> <Esc>:tabedit<CR>
