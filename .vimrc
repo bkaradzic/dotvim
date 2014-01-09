@@ -27,7 +27,7 @@ set list
 set listchars=tab:--,trail:-,extends:#,nbsp:.
 
 " highlight everything after 80-chars
-au FileType markdown match ErrorMsg '\%>80v.\+' 
+au FileType markdown match ErrorMsg '\%>80v.\+'
 
 " invisible character colors
 highlight NonText guifg=#4a4a59
@@ -41,6 +41,8 @@ nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 " airline
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#_powerline_fonts=1
+set encoding=utf-8
 
 " fuzzyfinder.vim - http://www.vim.org/scripts/script.php?script_id=1984
 call l9#defineVariableDefault('g:fuf_dataDir', '~/.vim-fuf-data')
@@ -129,8 +131,9 @@ set t_vb=         " don't flash
 set diffexpr=
 
 if has('win32')
-	set guifont=DejaVu\ Sans\ Mono:h10:cDEFAULT
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10:cDEFAULT
 elseif has('mac')
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
 	set clipboard+=unnamed
 	nnoremap ø :A<CR>
 	nnoremap Ø :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h*', '**/*.inl',  '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go', '**/*.sc', '**/*.sh', '**/*.*lsl']]) \| FufCoverageFile<CR>
@@ -138,5 +141,5 @@ elseif has('mac')
 	nnoremap <C-tab> :bn<CR>
 	nnoremap <C-S-tab> :bt<CR>
 elseif has('unix')
-	set guifont=DejaVu\ Sans\ Mono\ 10
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 endif
