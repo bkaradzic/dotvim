@@ -63,6 +63,9 @@ nnoremap <A-o> :A<CR>
 " Toggle between relative and absolute line numbers.
 nnoremap <F3> :NumbersToggle<CR>
 
+" vim-go
+let g:go_disable_autoinstall=1
+
 " tabs
 map <C-S-tab> <Esc>:bp<CR>
 nmap <C-S-tab> :bp<CR>
