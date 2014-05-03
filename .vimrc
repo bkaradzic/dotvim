@@ -1,5 +1,9 @@
 source $VIMRUNTIME/mswin.vim
 
+if &shell =~# 'fish$'
+	set shell=sh
+endif
+
 call pathogen#infect()
 
 filetype plugin indent on
