@@ -16,6 +16,9 @@ if has('gui_running')
 	set guioptions-=T
 endif
 
+" no history
+set viminfo='0,:0,<0,@0,f0
+
 set ffs=unix,dos
 
 " ,,,
