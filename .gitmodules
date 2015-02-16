@@ -1,18 +1,18 @@
 [submodule "bundle/vim-lua-ftplugin"]
 	path = bundle/vim-lua-ftplugin
-	url = git://github.com/xolox/vim-lua-ftplugin
+	url = https://github.com/xolox/vim-lua-ftplugin
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
-	url = git://github.com/hallison/vim-markdown.git
+	url = https://github.com/hallison/vim-markdown
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
+	url = https://github.com/Lokaltog/vim-easymotion
 [submodule "vim-numbers"]
 	path = bundle/vim-numbers
 	url = https://github.com/myusuf3/numbers.vim
 [submodule "bundle/vim-ag"]
 	path = bundle/vim-ag
-	url = http://github.com/rking/ag.vim
+	url = https://github.com/rking/ag.vim
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
@@ -21,7 +21,10 @@
 	url = https://github.com/fatih/vim-go
 [submodule "bundle/vim-editorconfig"]
 	path = bundle/vim-editorconfig
-	url = http://github.com/editorconfig/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
