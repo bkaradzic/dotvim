@@ -53,7 +53,6 @@ let g:airline_powerline_fonts = 1
 
 " fuzzyfinder.vim - http://www.vim.org/scripts/script.php?script_id=1984
 call l9#defineVariableDefault('g:fuf_dataDir', '~/.vim-fuf-data')
-nnoremap <A-O> :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h*', '**/*.inl',  '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go', '**/*.sc', '**/*.sh', '**/*.*lsl']]) \| FufCoverageFile<CR>
 nnoremap <A-P> :FufBuffer<CR>
 
 " easytags.vim
@@ -74,6 +73,7 @@ nnoremap <F3> :NumbersToggle<CR>
 let g:go_disable_autoinstall=1
 
 " vim-unite + pt
+nnoremap <A-O> :Unite file_rec<CR>
 nnoremap <silent> ,g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 if executable('pt')
   let g:unite_source_grep_command = 'pt'
@@ -143,7 +143,7 @@ elseif has('mac')
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
 	set clipboard+=unnamed
 	nnoremap ø :A<CR>
-	nnoremap Ø :call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h*', '**/*.inl',  '**/*.cpp', '**/*.c', '**/*.lua', '**/*.go', '**/*.sc', '**/*.sh', '**/*.*lsl']]) \| FufCoverageFile<CR>
+	nnoremap Ø :Unite file_rec<CR>
 	nnoremap ∏ :FufBuffer<CR>
 	nnoremap <C-tab> :bn<CR>
 	nnoremap <C-S-tab> :bt<CR>
