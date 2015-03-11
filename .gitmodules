@@ -28,3 +28,6 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "bundle/vim-unite"]
+	path = bundle/vim-unite
+	url = https://github.com/Shougo/unite.vim
