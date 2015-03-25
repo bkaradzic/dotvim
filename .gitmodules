@@ -1,6 +1,3 @@
-[submodule "bundle/vim-lua-ftplugin"]
-	path = bundle/vim-lua-ftplugin
-	url = https://github.com/xolox/vim-lua-ftplugin
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/hallison/vim-markdown
