@@ -65,6 +65,9 @@ nnoremap <A-o> :A<CR>
 " Toggle between relative and absolute line numbers.
 nnoremap <F3> :NumbersToggle<CR>
 
+" Toggle semantic highlight
+nnoremap <F4> :SemanticHighlightToggle<CR>
+
 " vim-go
 let g:go_disable_autoinstall=1
 
