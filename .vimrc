@@ -81,6 +81,9 @@ if executable('pt')
   let g:unite_source_grep_encoding = 'utf-8'
 endif
 
+" vim-gitgutter
+let g:gitgutter_max_signs = 10000
+
 " tabs
 map <C-S-tab> <Esc>:bp<CR>
 nmap <C-S-tab> :bp<CR>
