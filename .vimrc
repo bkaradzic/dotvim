@@ -82,7 +82,7 @@ if executable('pt')
 endif
 
 " vim-gitgutter
-let g:gitgutter_max_signs = 10000
+let g:gitgutter_max_signs = 20000
 
 " tabs
 map <C-S-tab> <Esc>:bp<CR>
