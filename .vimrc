@@ -87,6 +87,9 @@ let g:gitgutter_max_signs = 20000
 " vim-git-time-lapse
 map <leader>gt :call TimeLapse() <CR>
 
+" vim-argwrap
+nnoremap <silent> <leader>a :ArgWrap<CR>
+
 " tabs
 map <C-S-tab> <Esc>:bp<CR>
 nmap <C-S-tab> :bp<CR>

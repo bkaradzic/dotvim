@@ -34,3 +34,6 @@
 [submodule "bundle/vim-semantic-highlight"]
 	path = bundle/vim-semantic-highlight
 	url = https://github.com/jaxbot/semantic-highlight.vim
+[submodule "bundle/vim-argwrap"]
+	path = bundle/vim-argwrap
+	url = https://github.com/FooSoft/vim-argwrap
