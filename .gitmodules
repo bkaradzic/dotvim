@@ -37,3 +37,6 @@
 [submodule "bundle/vim-argwrap"]
 	path = bundle/vim-argwrap
 	url = https://github.com/FooSoft/vim-argwrap
+[submodule "bundle/vim-tagets"]
+	path = bundle/vim-tagets
+	url = https://github.com/wellle/targets.vim
