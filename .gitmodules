@@ -40,3 +40,6 @@
 [submodule "bundle/vim-tagets"]
 	path = bundle/vim-tagets
 	url = https://github.com/wellle/targets.vim
+[submodule "bundle/vim-perforce"]
+	path = bundle/vim-perforce
+	url = https://github.com/nfvs/vim-perforce
