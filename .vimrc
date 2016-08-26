@@ -90,6 +90,12 @@ map <leader>gt :call TimeLapse() <CR>
 " vim-argwrap
 nnoremap <silent> <leader>a :ArgWrap<CR>
 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
 " tabs
 map <C-S-tab> <Esc>:bp<CR>
 nmap <C-S-tab> :bp<CR>
