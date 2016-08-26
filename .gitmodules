@@ -43,3 +43,6 @@
 [submodule "bundle/vim-perforce"]
 	path = bundle/vim-perforce
 	url = https://github.com/nfvs/vim-perforce
+[submodule "bundle/vim-easy-align"]
+	path = bundle/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align
