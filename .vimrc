@@ -70,6 +70,7 @@ nnoremap <F4> :SemanticHighlightToggle<CR>
 
 " vim-go
 let g:go_disable_autoinstall=1
+let g:go_bin_path = expand("~/.vim-go-tools")
 
 " vim-unite + pt
 nnoremap <A-O> :Unite file_rec<CR>
