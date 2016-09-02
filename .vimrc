@@ -72,6 +72,13 @@ nnoremap <F4> :SemanticHighlightToggle<CR>
 let g:go_disable_autoinstall=1
 let g:go_bin_path = expand("~/.vim-go-tools")
 
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 " vim-unite + pt
 nnoremap <A-O> :Unite file_rec<CR>
 nnoremap <silent> ,g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
