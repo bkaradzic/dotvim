@@ -162,7 +162,6 @@ if has('win32')
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10:cDEFAULT
 elseif has('mac')
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
-	set clipboard+=unnamed
 	nnoremap ø :A<CR>
 	nnoremap Ø :Unite file_rec<CR>
 	nnoremap ∏ :FufBuffer<CR>
