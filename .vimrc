@@ -98,6 +98,8 @@ map <leader>gt :call TimeLapse() <CR>
 " vim-argwrap
 nnoremap <silent> <leader>a :ArgWrap<CR>
 let g:argwrap_comma_first = 1
+let g:argwrap_comma_first_indent = 1
+let g:argwrap_tail_indent_braces = '('
 
 " vim-easy-align
 xmap ga <Plug>(EasyAlign)
