@@ -14,6 +14,8 @@ set guioptions-=m
 " Remove toolbar
 if has('gui_running')
 	set guioptions-=T
+	set lines=50
+	set columns=120
 endif
 
 " no history
@@ -125,8 +127,6 @@ colorscheme molokai
 set nocp
 set bs=2
 set number
-set lines=50
-set columns=120
 set sessionoptions=resize,winpos,winsize
 set gdefault
 
