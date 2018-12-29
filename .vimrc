@@ -157,6 +157,7 @@ set incsearch     " show search matches as you type
 "set visualbell    " don't beep
 set noerrorbells  " don't beep
 set t_vb=         " don't flash
+set nofoldenable  " disable folding
 
 set diffexpr=
 
