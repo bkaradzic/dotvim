@@ -1,3 +1,5 @@
+set langmenu=en
+
 source $VIMRUNTIME/mswin.vim
 
 if &shell =~# 'fish$'
