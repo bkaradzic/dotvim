@@ -13,6 +13,8 @@ filetype plugin indent on
 " Remove menu bar
 set guioptions-=m
 
+set sidescroll=1
+
 " Remove toolbar
 if has('gui_running')
 	set guioptions-=T
