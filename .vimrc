@@ -46,6 +46,10 @@ au FileType markdown match ErrorMsg '\%>80v.\+'
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
+" macOS vim brings help when insert key is pressed...
+noremap  <Help> <Insert>
+noremap! <Help> <Insert>
+
 " single character insert
 "nmap <Space> i_<Esc>r
 nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
