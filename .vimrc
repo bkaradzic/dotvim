@@ -85,21 +85,10 @@ let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
-" vim-unite + pt
-nnoremap <A-O> :Unite file_rec<CR>
-nnoremap <silent> ,g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
-if executable('pt')
-  let g:unite_source_grep_command = 'pt'
-  let g:unite_source_grep_default_opts = '--nogroup --nocolor'
-  let g:unite_source_grep_recursive_opt = ''
-  let g:unite_source_grep_encoding = 'utf-8'
-endif
-
 " vim-gitgutter
 let g:gitgutter_max_signs = 20000
-
-" vim-git-time-lapse
-map <leader>gt :call TimeLapse() <CR>
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
 
 " vim-argwrap
 nnoremap <silent> <leader>a :ArgWrap<CR>
